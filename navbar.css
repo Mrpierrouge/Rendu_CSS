@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 200vh;
+}
+nav {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightcoral;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color: grey;
+    gap: 30px;
+    align-items: center;
+    flex-grow: 0.3;
+    justify-content: space-between;
+    flex-grow: 0.5;
+    flex-wrap: wrap;
+
+}
+
+.boutons{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.bouton{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inscription{
+    background-color: #e1E1eb;
+}
+.inscription:hover{
+    animation: pulseLight 1.5s infinite;
+}
+
+.connexion{
+    background-color: #405082;
+}
+.connexion:hover{
+    animation: pulseDark 1.5s infinite;
+}
+
+
+@media screen and (max-width : 670px) {
+    
+}
+
+@keyframes pulseLight {
+	0% {
+	 box-shadow: 0 0 0 0 #e1E1eb;
+	}
+   
+	70% {
+	 box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+	}
+   
+	100% {
+	 box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+	}
+}
+@keyframes pulseDark {
+	0% {
+	 box-shadow: 0 0 0 0 #405082;
+	}
+   
+	70% {
+	 box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+	}
+   
+	100% {
+	 box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+	}
+}
