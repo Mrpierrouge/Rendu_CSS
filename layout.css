@@ -1,8 +1,9 @@
 .layout{
     display: grid;
     grid-template-columns: 1fr 7fr 1fr 2fr 1fr;
-    row-gap: 100px;
 }
+
+
 main{
     grid-column: 2/3;
     background-color: red;
@@ -18,10 +19,12 @@ main :nth-child(3n){
     background-color: grey;
 }
 .header{
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-bottom: 2px solid black;
+    
 }
 .header img {
     width: 40%;
@@ -30,6 +33,42 @@ main :nth-child(3n){
 .auteur{
     display:flex;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
+}
+
+@media screen and (max-width : 600px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .header{
+        flex-direction: column;
+        
+    }
+}
+
+
+aside{
+    position: sticky;
+    top: 30px;
+    grid-column: 4/5;
+    background-color: blue;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width : 650px) {
+    .layout{
+        grid-template-columns: 1fr 7fr 1fr ;
+        row-gap: 30px;
+    }
+    aside{
+        order: -1;
+        grid-column: 2/3;
+        top: 0;
+    }
 }
