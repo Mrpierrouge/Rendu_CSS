@@ -23,20 +23,17 @@ nav {
 ul{
     list-style: none;
     display: flex;
-    background-color: grey;
     gap: 30px;
     align-items: center;
-    flex-grow: 0.3;
     justify-content: space-between;
-    flex-grow: 0.5;
     flex-wrap: wrap;
-
 }
 
 .boutons{
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
+    justify-self: end;
 }
 .bouton{
     display: flex;
@@ -63,9 +60,16 @@ ul{
 }
 
 
-@media screen and (max-width : 670px) {
-    
+@media screen and (max-width : 600px) {
+    nav{
+        flex-direction: column;
+        gap:20px;
+    }
 }
+
+
+
+
 
 @keyframes pulseLight {
 	0% {
