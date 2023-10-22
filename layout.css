@@ -13,28 +13,31 @@ main{
     column-gap: 5px;
 }
 main :nth-child(3n){
-    grid-column: 1/-1
+    grid-column: 1/-1;
 }
+
+
+
 .tweet{
     background-color: grey;
 }
 .header{
-    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     border-bottom: 2px solid black;
-    
 }
 .header img {
     width: 40%;
+    max-width: 200px;
 }
-
 .auteur{
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+
 
 @media screen and (max-width : 600px) {
     main{
@@ -45,21 +48,21 @@ main :nth-child(3n){
 @media screen and (max-width : 350px) {
     .header{
         flex-direction: column;
-        
     }
 }
 
 
 aside{
+    grid-column: 4/5;
     position: sticky;
     top: 30px;
-    grid-column: 4/5;
+    
     background-color: blue;
     height: 250px;
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 20px;
-}
+}   
 
 @media screen and (max-width : 650px) {
     .layout{
