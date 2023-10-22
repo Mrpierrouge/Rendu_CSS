@@ -1,2 +1,2 @@
-lien vidéo explicative grid : 
+lien vidéo explicative grid : https://www.youtube.com/watch?v=TevvFE7UxlM
 lien vidéo explicative flex :

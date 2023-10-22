@@ -1,36 +1,40 @@
 nav {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
     padding: 20px;
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: lightcoral;
-    align-items: center;
+    background-color: lightcoral; 
     padding-inline: 20px;
 }
 
 ul{
-    list-style: none;
     display: flex;
-    gap: 30px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
+
+    list-style: none;
 }
 
 .boutons{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-self: end;
 }
 
 .bouton{
     display: flex;
     justify-content: center;
+
     padding-bottom: 10px;
     padding-top: 10px;
+
     border-radius: 8px;
+
     padding-left: 15px;
     padding-right: 15px;
 }
